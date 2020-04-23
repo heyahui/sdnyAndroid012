@@ -27,4 +27,40 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="web"
+        android:id="@+id/web"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="contactsList"
+        android:id="@+id/contacatsList"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="showMap"
+        android:id="@+id/showMap"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="showPhoto"
+        android:id="@+id/showPhoto"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="PICK_CONTACT"
+        android:onClick="pickContact"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="PICK_CONTACT"
+        android:id="@+id/pickContact"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="implicitStart"
+        android:id="@+id/implicitStart"
+        android:layout_height="wrap_content" />
 </LinearLayout>

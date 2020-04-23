@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.edu.sdwu.android02.classroom.sn170507180206">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity01"></activity>
+        <activity android:name=".MainActivity01" />
         <activity android:name=".Ch10Activity1" />
         <activity android:name=".Ch10Activity2">
             <intent-filter>
@@ -28,7 +30,19 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ch10Activity3"></activity>
+        <activity android:name=".ch10Activity3" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Ch12Activity1" />
+
+        <service
+            android:name=".MyService2"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
