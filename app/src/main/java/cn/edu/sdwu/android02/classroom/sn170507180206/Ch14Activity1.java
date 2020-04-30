@@ -2,7 +2,9 @@ package cn.edu.sdwu.android02.classroom.sn170507180206;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteCantOpenDatabaseException;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ActionBarContextView;
@@ -28,6 +30,7 @@ public class Ch14Activity1 extends AppCompatActivity {
             contentValues.put("stuname","Tom");
             contentValues.put("stutel","13666666666");
             sqLiteDatabase.insert("student",null,contentValues);
+
             sqLiteDatabase.setTransactionSuccessful();
         }catch (Exception e){
             Log.e(Ch14Activity1.class.toString(),e.toString());
@@ -54,7 +57,7 @@ public class Ch14Activity1 extends AppCompatActivity {
             Log.e(Ch14Activity1.class.toString(),e.toString());
         }finally {
             //使用完毕，将数据库关闭
-            sqLiteDatabase.endTransaction();//结束食物
+            sqLiteDatabase.endTransaction();//结束事务
             sqLiteDatabase.close();
         }
     }
