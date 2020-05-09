@@ -95,7 +95,7 @@ public class Ch14Activity1 extends AppCompatActivity {
             Log.e(Ch14Activity1.class.toString(),e.toString());
         }finally {
             //使用完毕，将数据库关闭
-            sqLiteDatabase.endTransaction();//结束食物
+            sqLiteDatabase.endTransaction();//结束事务
             sqLiteDatabase.close();
         }
 
